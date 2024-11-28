@@ -1,33 +1,31 @@
 #include <stdio.h>
 
 int main() {
-    int n;
+    
+    int length;
 
-   
-    do {
-        printf("Nhap so phan tu cua mang (phai lon hon 0): ");
-        scanf("%d", &n);
+    printf("Please input length of the array: \n");
+    scanf("%d", &length);
 
-        if (n <= 0) {
-            printf("So phan tu phai lon hon 0. Vui long nhap lai!\n");
-        }
-    } while (n <= 0);  
+    int array[length];
 
-    int mang[n]; 
-
-   
-    printf("Nhap cac phan tu cua mang:\n");
-    for (int i = 0; i < n; i++) {
-        printf("Phan tu thu %d: ", i + 1);
-        scanf("%d", &mang[i]);
+    for(int i = 0; i <= length - 1; i = i + 1) {
+        printf("Please input array[%d]: ", i);
+        scanf("%d", &array[i]);
     }
 
-   
-    printf("Cac phan tu trong mang la:\n");
-    for (int i = 0; i < n; i++) {
-        printf("%d ", mang[i]);
+
+    for(int i = 0; i <= length - 1; i = i + 1) {
+        printf("Please input array[%d] = %d\n", i, array[i]);
     }
-    printf("\n");
+    	
+    
+    
+    
+   
+   
+   
+   
 
     return 0;
 }
